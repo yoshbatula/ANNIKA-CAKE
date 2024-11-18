@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>LOADING PAGE</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="cake.png">
+</head>
+<body>
+    <div class="container">
+        <div class="gif-cutie">
+            <img src="https://media.tenor.com/bh9MAiCpL6wAAAAi/birthday-cake.gif" alt="">
+        </div>
+        <div class="loading-animation">
+            <h2>LOADING...</h2>
+        </div>
+    </div>
+
+    <script>
+        setTimeout(function() {
+            document.body.style.transition = "opacity 1s ease-out";
+            document.body.style.opacity = 0;
+
+            setTimeout(function() {
+                window.location.href = "CAKE.html";
+            }, 1000);
+        }, 5000);
+    </script>
+</body>
+</html>
